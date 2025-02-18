@@ -519,7 +519,36 @@
   .icon-wrapper ion-icon:last-child { right: 10px; }
   
   
+  .back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
   
+  .back-home .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Make it a perfect circle */
+    height: 50px; 
+    background-color: #bc9c22;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%; /* Makes it round */
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-home .btn:hover {
+    background-color: #e68900;
+  }
+  
+  @media (max-width: 768px) {
+    .back-home {
+      display: none;
+    }
+  }
   
   
   /*-----------------------------------*\
